@@ -1,0 +1,124 @@
+.about-me {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.about-me h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.about-me h2 span {
+    background: linear-gradient(to right, #ff00ff, #ff8800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.description {
+    text-align: left;
+    max-width: 600px;
+}
+
+.skills {
+    margin-top: 1rem;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background: #444;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 10px;
+}
+
+.html-css {
+    width: 80%;
+    background: linear-gradient(to right, #ff00ff, #ff8800);
+}
+
+.react-js {
+    width: 70%;
+    background: linear-gradient(to right, #ff00ff, #ff8800);
+}
+
+.javascript {
+    width: 75%;
+    background: linear-gradient(to right, #ff00ff, #ff8800);
+}
+
+.next-js {
+    width: 65%;
+    background: linear-gradient(to right, #ff00ff, #ff8800);
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-size: 0.875rem;
+    color: #ff8800;
+}
+.about-pic {
+    
+    width: 300px;
+    height: 400px;
+    /* border-style: groove;
+    border-color: #ff8800; */
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.container img {
+    width: 120px;
+    position: absolute;
+    bottom: -32PX;
+    right: 480px;
+    
+}
+.container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    margin: 0;
+}
+
