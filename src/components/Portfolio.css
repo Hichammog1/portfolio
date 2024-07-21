@@ -1,91 +1,146 @@
 .Portfolio {
-    text-align: center;
-    background-color: #000;
-    color: white;
-    padding: 20px;
-    
-  }
-  
-  
-  h1 {
-    font-size: 3em;
-  }
-  
+  text-align: center;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+.Portfolio h1 {
+  font-size: 3em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project {
+  background-color: #ffffff19;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%; 
+  height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 100%;
+  height: 70%; /* Adjust as needed */
+}
+
+.project img {
+  width: 100%;
+  height: auto; /* Ensure the image scales properly */
+}
+
+.project p {
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #00000080;
+}
+
+.show-more {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.show-more:hover {
+  background-color: #555;
+}
+
+.container3 {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.container3 img {
+  width: 120px;
+  position: absolute;
+  bottom: -32px;
+  right: 430px;
+}
+
+.container3 h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    /* margin-left:0.5rem ; */
-    /* margin-right: 1rem ; */
-  }
-  
-  .project {
-    background-color: #ffffff19;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: "100%"; 
-    height: 250px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-  
-  .image-container {
-    width: 100%;
-    height: 70%; /* Adjust as needed */
-    /* overflow: auto; */
-  }
-  
-  .project img {
-    width: 100%;
-    height: auto; /* Ensure the image scales properly */
-  }
-  
-  .project p {
-    padding: 20px;
-    padding-bottom:40px ;
-    text-align: center;
-    height: 0px;
-    background-color: #00000080;
-    
-  }
-  
-  .show-more {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin-top: 20px;
-  }
-  
-  .show-more:hover {
-    background-color: #555;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 1rem;
+      margin-right: 1rem;
   }
 
-  .container3 {
-    position: relative;
-    text-align: center;
-    color: white;
-    margin-bottom: 50px;
+  .project {
+      width: auto;
+      height: auto;
+  }
 }
-.container3 img {
-    width: 120px;
-    position: absolute;
-    bottom: -32PX;
-    right: 430px;
-    
+
+@media (max-width: 768px) {
+  .project-grid {
+      grid-template-columns: 1fr;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+  }
+
+  .Portfolio h1 {
+      font-size: 2rem;
+  }
+
+  .project {
+      width: auto;
+      height: auto;
+  }
+
+  .project h3 {
+      font-size: 1.5rem;
+  }
+
+  .project p {
+      font-size: 1rem;
+  }
 }
-.container3 h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    margin: 0;
+
+@media (max-width: 480px) {
+  .Portfolio h1 {
+      font-size: 1.5rem;
+  }
+
+  .project p {
+      font-size: 0.9rem;
+  }
+
+  .show-more {
+      font-size: 1rem;
+  }
+
+  .container3 img {
+      width: 60px;
+      right: 50px;
+      bottom: -8px;
+  }
+
+  .container3 h2 {
+      font-size: 1.5rem;
+  }
 }
-  

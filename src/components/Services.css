@@ -31,10 +31,9 @@
     padding: 1rem;
     text-align: left;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    width:280px;
+    width: 280px;
     height: 300px;
     margin: 0.5rem;
-    
 }
 
 .service-card:hover {
@@ -67,30 +66,59 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 @media (max-width: 1024px) {
     .services-container {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .service-card {
+        width: auto;
+        height: auto;
     }
 }
 
 @media (max-width: 768px) {
     .services-container {
         grid-template-columns: 1fr;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        width: auto;
+        height: auto;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .service-card p {
+        font-size: 1rem;
     }
 }
+
 .container2 {
     position: relative;
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
+
 .container2 img {
     width: 120px;
     position: absolute;
-    bottom: -32PX;
+    bottom: -32px;
     right: 450px;
-    
 }
+
 .container2 h2 {
     position: absolute;
     top: 50%;
@@ -98,4 +126,35 @@
     transform: translate(-50%, -50%);
     font-size: 3em;
     margin: 0;
+}
+
+/* Responsive Styles for .container2 */
+@media (max-width: 1024px) {
+    .container2 img {
+        right: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container2 img {
+        width: 80px;
+        right: 100px;
+        bottom: -16px;
+    }
+
+    .container2 h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 img {
+        width: 60px;
+        right: 50px;
+        bottom: -8px;
+    }
+
+    .container2 h2 {
+        font-size: 1.5rem;
+    }
 }

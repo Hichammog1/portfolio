@@ -55,12 +55,12 @@
         border-color: #ff00ff;
     }
 }
+
 .main-content {
     text-align: center;
     padding: 2rem;
     background-color: #000;
     color: #fff;
-    
 }
 
 .profile-pic {
@@ -69,9 +69,10 @@
     border-radius: 100%;
     animation: borderAnimation 6s infinite;
 }
+
 .intro {
     margin-left: 10rem;
-    margin-right: 10rem ;
+    margin-right: 10rem;
 }
 
 .intro h1 {
@@ -84,6 +85,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .about-header {
     display: flex;
     justify-content: center;
@@ -108,15 +110,67 @@
     background: none;
     border: 1px solid #ffffff;
     font-size: medium;
-    
 }
+
 .resume-button:hover {
     transform: scale(1.05);
     border: 1px solid #ff00ff;
 }
+
 .connect-button:hover {
     transform: scale(1.05);
     border: 1px solid #ffffff;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .intro {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .connect-button, .resume-button {
+        width: 150px;
+        block-size: 50px;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .about-header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .connect-button, .resume-button {
+        width: 120px;
+        block-size: 40px;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .about-header {
+        flex-direction: column;
+    }
+}

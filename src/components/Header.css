@@ -5,8 +5,6 @@
     padding: 1rem 2rem;
     background-color: #000;
     color: #fff;
-    position: sticky;
-    top: 0;
     z-index: 1000;
 }
 
@@ -21,7 +19,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 nav ul {
     list-style: none;
     display: flex;
@@ -33,7 +30,7 @@ nav ul {
 nav a {
     color: #fff;
     font-size: large;
-    font-weight:500;
+    font-weight: 500;
     text-decoration: none;
     padding: 0.5rem 0;
     position: relative;
@@ -66,19 +63,56 @@ nav a.active::after {
     margin-bottom: 50px;
     font-size: 2rem;
     font-weight: bold;
-    bottom: -25PX;
+    bottom: -25px;
 }
+
 .container1 img {
     width: 120px;
     position: absolute;
-    bottom: -5PX;
+    bottom: -5px;
     right: -6px;
-    
 }
+
 .container1 h3 {
     position: relative;
     font-size: 1em;
     margin: 0;
-    
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .container1 {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+
+    .container1 img {
+        width: 80px;
+        right: 0;
+        bottom: -10px;
+    }
+
+    /* Additional adjustments for mobile */
+    .header {
+        position: relative;
+    }
+}
