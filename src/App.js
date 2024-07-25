@@ -7,10 +7,15 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import ContactMe from './components/ContactMe';
+import Resume from './components/Resume';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <>
             <Header />
             <Main />
             <AboutMe />
@@ -18,7 +23,11 @@ function App() {
             <Portfolio />
             <ContactMe />
             <Footer />
-        </div>
+          </>
+        } />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </Router>
   );
 }
 

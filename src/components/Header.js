@@ -58,9 +58,10 @@ const Header = () => {
                             className={active === 'contact' ? 'active' : ''}
                             onClick={() => setActive('contact')}
                         >
-                            Contact
+                            Contact 
                         </a>
                     </li>
+                    
                 </ul>
             </nav>
             <button className="connect-button" onClick={() => window.location.href = '#contact'}>Connect With Me</button>

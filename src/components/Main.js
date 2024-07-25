@@ -1,11 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Main.css';
 import IMG_1764 from '../assets/IMG_1764.jpg';
 
 const Main = () => {
 
+    const navigate = useNavigate();
+
     const handleResumeClick = () => {
-        window.open('https://files.fm/f/t7judxsces', '_blank');
+        window.open('/resume', '_blank'); // Opens the resume in a new tab
     };
 
     return (
