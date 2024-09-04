@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b025062.css",
+    "main.js": "/static/js/main.1ef9d8a7.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/Fashionstoreshopluncher.webp": "/static/media/Fashionstoreshopluncher.15b8072a1218213a0648.webp",
+    "static/media/Cosmeticshopluncher.webp": "/static/media/Cosmeticshopluncher.145af272f679c6bd5ba6.webp",
+    "static/media/FragenceShopluncher.webp": "/static/media/FragenceShopluncher.3a0694e919c2b0f8c9b0.webp",
+    "static/media/Fitnessshopluncher.webp": "/static/media/Fitnessshopluncher.28d94bdd3defc86caf7d.webp",
+    "static/media/electrostoreshopluncher.webp": "/static/media/electrostoreshopluncher.a9ffe082eb1f287da720.webp",
+    "static/media/CarPartShopluncher.webp": "/static/media/CarPartShopluncher.5958dd034bc6ae27d2c2.webp",
+    "static/media/Hicham Arhemt allah cv Final version.pdf": "/static/media/Hicham Arhemt allah cv Final version.421eba0c74574bcf0ee1.pdf",
+    "static/media/IMG_1763.jpg": "/static/media/IMG_1763.718b6b7df5aa3a79eb6d.jpg",
+    "static/media/IMG_1764.jpg": "/static/media/IMG_1764.75de053699d369a4d2f1.jpg",
+    "index.html": "/index.html",
+    "static/media/textarriere.svg": "/static/media/textarriere.c9aae4dcd7af8267d4231831e4c3b312.svg",
+    "main.3b025062.css.map": "/static/css/main.3b025062.css.map",
+    "main.1ef9d8a7.js.map": "/static/js/main.1ef9d8a7.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b025062.css",
+    "static/js/main.1ef9d8a7.js"
+  ]
+}
